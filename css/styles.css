@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+@font-face {
+    font-family: 'cyberpunk';
+    src: url('../fonts/cyberpunk.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  *,
+  *::before,
+  *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+  }
+
+  /*estilos del header*/
+  header{
+    display: block;
+    background-color: black;
+    width: 100%;
+    padding: 1rem;
+  }
+  header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .logo{
+    width: 60px;
+    height: 60px;
+  }
+  .menu{
+    display: flex;
+  }
+
+
+  .menu li{
+    margin-right: 30px;
+  }
+
+  .menu li a {
+    color: aliceblue;
+    font-size: 20px;
+  }
+
+  a:hover{
+    border-bottom: #b0ed04;
+  }
+
+/*estilos de la bio*/
+.banner{
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+
+.banner h1{
+    color: #b0ed04;
+    font-family: 'cyberpunk';
+    font-size: 60px;
+    text-align: center;
+}
+
+.bio-content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.articulo-bio{
+  display: flex;
+ justify-content: space-around;
+ margin-bottom: 100px;
+
+}
+
+.bio-picture{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+.bio-text{
+  display: flex;
+    font-size: 20px;
+    font-family: 'Anonymous Pro', monospace;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+  
+}
+
+.video-welcome-section {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gallery */  
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows:minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+
+}
+
+
+/* Utils */
+
+.active-color {
+  background-color: #b0ed04;
+  padding: 5px;
+  color: black !important;
+}
